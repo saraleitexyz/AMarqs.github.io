@@ -1,55 +1,191 @@
-<link href="style.css" rel="stylesheet"></link>
+<!DOCTYPE html>
+<html lang="es">
 
-<h1>Hola, soy <strong>[Tu Nombre]</strong></h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
-<p>Desarrollador web | Diseñador UX | Otro rol</p>
+<link rel="stylesheet" href="style.css">
 
-<h2>Proyectos</h2>
-<!--
-<div class="proyecto">
-    <h3>Proyecto 1</h3>
-    <p>Descripción breve del proyecto</p>
-    <a href="https://github.com/usuario/proyecto1">Ver en GitHub</a>
+<body>
+      <header>
+<a href="#" class="logo">Portfolio</a>
+
+<!-- MENU DINAMICO CON LINKS
+
+<div class="toggle" onclick="toggleMenu();"></div>
+<ul class="menu">
+  <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+  <li><a href="#about" onclick="toggleMenu();">About</a></li>
+  <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+  <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+  <li><a href="#testimonial" onclick="toggleMenu();">Testimonials</a></li>
+  <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+</ul>
+-->
+
+</header>
+  <section class="banner" id="home">
+    <div class="text-banner">
+      <h2>Hello, I'm <br><span>Quentin Feret.</span></h2>
+      <h3>I'm learning Front End Web Design.</h3>
+      <a href="#home" class="btn">About Me</a>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="content">
+      <div class="contentbox">
+        <h3>I am currently learning client web languages.</h3>
+        <p>I am a numerical innovative manager. And I'm training with Freecodecamp and Online tutorials to master HTML, CSS and Javascript languages. Here is the second template for a responsive portfolio landing page. <br>And what we should master in first year in my school.
+          <br><br>Enjoy ! </p>
+      </div>
+      <div class="w50">
+        <img src="https://github.com/JackCree/CSSexercices/blob/main/Responsive-web-design-landing-page-01/foots.jpg?raw=true" class="img"> 
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="heading white">
+      <h2>Services</h2>
+      <p>In one sentence, create simple HTML/CSS landing page</p>
+    </div>
+    <div class="content">
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+        <h2>Web Design</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div> 
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-file-code"></i></div>
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div> 
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-database"></i></div>
+        <h2>Data Analysis</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div> 
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-edit"></i></div>
+        <h2>Graphism</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div> 
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-photo-video"></i></div>
+        <h2>Video Editing</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div> 
+    </div>
+  </div>
+  </section>
+  <section class="work" id="work">
+    <div class="heading white">
+      <h2>My latest work</h2>
+      <p>Here are some works done with HTML/CSS languages</p>
+    </div>
+    <div class="content">
+      <div class="workbox">
+        <a href="https://codepen.io/quentin-feret/pen/PoNzxYQ" target="_blank"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project"></a>
+      </div>
+      <div class="workbox">
+        <a href="https://codepen.io/quentin-feret/pen/PoNzxYQ" target="_blank"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project"></a>
+      </div>
+    </div>
+    <div class="heading">
+      <a href="#" class="btn">View more</a>
+    </div>
+  </section>
+
+<!-- TESTIMONIOS
+<section class="testimonials" id="testimonial">
+  <div class="heading">
+      <h2>Testimonials</h2>
+      <p>Lol you think they are true ?...</p>
+    </div>
+  <div class="content">
+    <div class="testimonialbox">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
+      <h3>Someone Famous<br><span>Creative Designer</span></h3>
+    </div>
+    <div class="testimonialbox">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <h3>Someone Famous<br><span>Creative Designer</span></h3>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- INFORMACION DE CONTACTO -->
+<section class="contact" id="contact">
+  <div class="heading white">
+      <h2>INFORMACIÓN DE CONTACTO</h2>
+      <!-- <p>Some questions about work. Here you are.</p> -->
+
+  </div>
+    <div class="content">
+      <div class="contactinfo">
+        <!-- <h3>Contact Informations</h3> -->
+        <div class="contactinfobox">
+          <div class="box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <h3>Correo electrónico</h3>
+              <p>albamarquesr@gmail.com</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <h3>LinkedIn</h3>
+              <p>Alba Marqués</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <h3>GitHub</h3>              
+              <p>AMarqs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULARIO DE CONTACTO
+      <div class="formbox">
+      <form>
+        <h3>Message Me</h3>
+        <input type="text" name="" placeholder="Full Name">
+        <input type="email" name="" placeholder="Your email">
+        <textarea placeholder="Your message"></textarea>
+        <input type="submit" value="Send">
+      </form>
+      -->
+
+    </div>
+    </div>
+</section>
+
+<!-- COPYRIGHT 
+<div class="copyright">
+  Copyright 2020 © Online Tutorials. All Rights Reserved
 </div>
 -->
 
-<h2>Escuela 42</h2>
-
-<h4>1. libft</h4>
-<p>Se trata de la construcción de una librería propia replicando funciones existentes.</p>
-
-<h4>push_swap</h4>
-
-<h4>so_long</h4>
-
-<h4>minitalk</h4>
-
-<h4>5. ft_printf</h4>
-
-<h4>6. get_next_line</h4>
-
-<h4>7. minishell</h4>
-
-<h4>8. philosophers</h4>
-
-<!--
-<h4>9. cub3d</h4>
-<h4>10. net_practice</h4>
-<h4>11. Módulos de cpp</h4>
--->
-
-<h2>Robótica</h2>
-
-<h3>Trabajo Fin de Grado</h3>
-
-<p>Proyecto sobre <strong>Planificación reactiva de caminos</strong> mediante persecución pura en un coche a escala.</p>
-
-<p>
-El objetivo de este Trabajo de Fin de Grado consiste en la implementación de un método reactivo de planificación de caminos que, mediante persecución pura, permite realizar el seguimiento de paredes, pasillos y personas con un coche a escala 1:10, equipado con un telémetro láser bidimensional (2D). Se utiliza el metasistema operativo ROS sobre una placa de desarrollo Jetson TX2.
-</p>
-
-<strong>Palabras claves</strong>
-
-<p>
-<code>ROS</code> <code>Gazebo</code> <code>navegación autónoma</code> <code>planificación reactiva de caminos</code> <code>persecución pura</code> <code>telémetro láser bidimensional</code>
-</p>
+  <script type="text/javascript">  window.addEventListener('scroll', function(){
+  var header= document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0);    
+    });
+    
+    function toggleMenu(){
+      var menutoggle = document.querySelector('.toggle');
+      var menu = document.querySelector('.menu');
+      menutoggle.classList.toggle('active');
+      menu.classList.toggle('active') 
+    }
+  </script>
+</body>

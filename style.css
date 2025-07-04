@@ -1,13 +1,415 @@
-.proyecto {
-    border-left: 4px solid #444;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
-
-p {
-    color: #ff0000;
+section {
+  padding: 100px;
 }
+/* Top Nav Bar Design*/
+header.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px; 
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s ease;
+}
+header.sticky .logo {
+  color: #111;
+}
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;  
+}
+header ul {
+  position: relative;
+  display : flex;  
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header.sticky ul li a {
+  color: #000;
+  font-weight: 500;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+}
+/*Banner design*/
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(https://github.com/JackCree/CSSexercices/blob/main/Responsive-web-design-landing-page-01/banner.jpg?raw=true);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  jusitfy-content: space-between;
+  align-items: center;
+}
+.banner h2 {
+  font-size: 3em;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.5em;;
+}
+.banner h2 span {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.banner h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #fff;
+}
+/*Design of button*/
+.btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+/*section design*/
+.heading.white {
+  color: #fff;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+.heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.contentbox {
+  padding-right: 30px;
+}
+.contentbox h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.w50 {
+  min-width: 50%;
+}
+img {
+  max-width: 100%;
+}
+/*Services section design*/
+.services {
+  background: #111;
+}
+.services .white {
+  color: #fff;
+}
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.services .content .servicesbox {
+  padding: 40px 20px 10px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.services .content .servicesbox:hover {
+  background: #2196f3;
+} 
+.services .content .servicesbox .icon {
+  margin:10px auto 20px auto;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+}
+.services .content .servicesbox .fa {
+  fill: #fff;
+  position: relative;
+  text-align: center;
+}
+.services .content .servicesbox h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.services .content .servicesbox p {
+  font-size: 15px;
+}
+/*work section design*/
+.work .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work .content .workbox {
+  width: 50%;
+  padding: 20px;
+}
+.work .content .workbox img {
+  max-width: 100%;
+}
+/*testimonial design section */
+.testimonials {
+  background: #f7f7f7;
+}
+.testimonials .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.testimonials .content .testimonialbox {
+  max-width: calc(50%- 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background: #2196f3;
+}
+.testimonials .content .testimonialbox p {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+.testimonials .content .testimonialbox h3 {
+  margin-top: 40px;
+  text-align: end;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1em;
+}
+.testimonials .content .testimonialbox h3 span {
+  font-size: 14px;
+  font-weight: 400;
+}
+/*Form section design*/
+.contact {
+  background: #111;  
+}
+.formbox {
+  min-width: 60%;
+}
+.formbox form {
+  display: flex;
+  flex-direction :column;
+}
+.formbox form h3, .contactinfo h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formbox form input, 
+.formbox form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+}
+.formbox form textarea {
+  min-height: 200px;
+}
+.formbox form input:placeholder
+.formbox form textarea:placeholder {
+  color: #999;
+}
+.formbox form input[type="submit"] {
+  max-width: 100px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.contactinfo {
+  min-height: 40%;
+}
+.contactinfobox {
+  position: relative;  
+}
+.contactinfobox .box {
+  position: relative;
+  padding: 20px;
+  display: flex;  
+}
+.contactinfobox .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  jusitfy-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+.contactinfobox .box .text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+.contactinfobox .box .text h3 {
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 0;
+}
+/*Copyright section design*/
+.copyright {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/*Responsive part*/
 
-html {
-    color: #ff0000;
+@media (max-width: 991px) {
+  header, header.sticky {
+    padding: 20px 50px;
+    z-index: 10;
+  }
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width:100%;
+    heigh: 100vh;
+    background: #fff;
+    transition: 0.6s ease;
+    z-index: 9;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  .menu.active {
+    left: 0;
+  }
+  header ul li a {
+    color: #111;
+    margin: 10px;
+    font-size: 24px;
+  }
+  .toggle:before {
+    content: "\2630";
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .toggle.active:before {
+    content: "\0002DF";
+    width: 20px;
+    height: 20px;
+    font-size: 50px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 50px;
+  }
+  header.sticky .toggle {
+    filter: invert(1);
+  }
+  header.sticky .toggle.active:before {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+  }
+  section {
+    pdding: 100px 50px;
+  }
+  .banner {
+    padding: 150px 50px;
+  }
+  .banner h2, .banner h3 {
+    font-size: 1em;
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .contentbox h3 {
+    font-size: 20px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .w50 {
+    margin-top: 20px;
+  }
+  .services .content .servicesbox {
+    height: 200px;
+  }
+  .work .content .workbox {
+    width: 100%;
+    padding: 10px;
+  }
+  .testimonials .content .testimonialbox {
+    max-width: calc(100% - 20px);
+    padding: 40px 20p;
+    margin: 10px;
+    background: #2196f3;
+  }
+  .testimonials .content .testimonialbox h3 {
+    margin-top: 20px;    
+  }
+  .contactinfo {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 600px){
+  header,
+  header.sticky {
+    padding: 20px 50px;
+  }
+  .banner {
+    padding: 150px 50px 100px;
+  }
+  section {
+    padding: 100px 20px;
+  }
 }
