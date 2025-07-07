@@ -2,6 +2,6 @@
 - Alinear items de sobre mi
 - Encajar la imagen del banner
 - Poner el texto del banner abajo
-- Ponerle a proyectos otro color de fondo (marroncito como la mano)
+- Ponerle a projectos otro color de fondo (marroncito como la mano)
 - Asociar cada cuadrado a un link a github
 - Ponerle una foto a cada cuadrado
