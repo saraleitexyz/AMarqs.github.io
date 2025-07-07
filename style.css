@@ -462,11 +462,11 @@ img {
   .services .content .servicesbox {
     height: 200px;
   }
-  /* .work .content .workbox {
+  .work .content .workbox {
     width: 100%;
     padding: 10px;
-  } */
-  /* .testimonials .content .testimonialbox {
+  } 
+  .testimonials .content .testimonialbox {
     max-width: calc(100% - 20px);
     padding: 40px 20p;
     margin: 10px;
@@ -474,7 +474,7 @@ img {
   }
   .testimonials .content .testimonialbox h3 {
     margin-top: 20px;    
-  } */
+  }
   .contactinfo {
     margin: 20px 0;
   }
