@@ -176,7 +176,7 @@ img {
 }
 .proyects .content .proyectsbox {
   padding: 50px 20px 20px 20px;
-  background: #222;
+  /* background: #222; */
   color: #fff;
   width: 340px;
   height: 340px;
@@ -220,6 +220,24 @@ img {
   margin-left: 20px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.cluster {
+  background-image: url('https://www.fundaciontelefonica.com/wp-content/uploads/2022/01/Cluster_42-image-2560x1410-1.jpg');
+  background-size: cover;
+}
+
+.uma {
+  background-color: black;
+  background-image: url('images/uma_racecar.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.ia {
+  background-image: url('https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 
 /* work section design
@@ -444,11 +462,11 @@ img {
   .services .content .servicesbox {
     height: 200px;
   }
-  .work .content .workbox {
+  /* .work .content .workbox {
     width: 100%;
     padding: 10px;
-  }
-  .testimonials .content .testimonialbox {
+  } */
+  /* .testimonials .content .testimonialbox {
     max-width: calc(100% - 20px);
     padding: 40px 20p;
     margin: 10px;
@@ -456,7 +474,7 @@ img {
   }
   .testimonials .content .testimonialbox h3 {
     margin-top: 20px;    
-  }
+  } */
   .contactinfo {
     margin: 20px 0;
   }
