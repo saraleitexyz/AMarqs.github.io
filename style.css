@@ -12,12 +12,12 @@ section {
 
 /* Top Nav Bar Design*/
 header.sticky {
-  background: #fff;
+  background: #ffffff;
   padding: 20px 100px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 header {
-  background: #fff;
+  background: #dbb192;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,10 +30,10 @@ header {
   transition: 0.6s ease;
 }
 header.sticky .logo {
-  color: #111;
+  color: #000000;
 }
 header .logo {
-  color: #000;
+  color: #000000;
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
@@ -64,6 +64,7 @@ header ul li a {
   position: relative;
   height: 100%;
   width: 100%;
+  background-color: #dbb192;
   /* background: url(/images/mano-robotica.png);
   background-size: cover;
   background-position: center; */
@@ -75,7 +76,7 @@ header ul li a {
   margin-bottom: 30px;
 }
 
-.banner .img-banner {
+/* .banner .img-banner {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,12 +84,12 @@ header ul li a {
   height: 100%;
   z-index: -1;
   margin-top: 20px;
-}
+} */
 .text-banner {
   text-align: center;
   z-index: 1;
-  padding: 20px;
-  padding-top: 120px;
+  /* padding: 20px; */
+  padding-top: 20px;
 }
 .banner h2 {
   font-size: 3em;
@@ -151,11 +152,15 @@ header ul li a {
 }
 img {
   max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /*Projects section design*/
 .proyects {
-  background: #9342057e;
+  background: #dbb192;
 }
 .proyects .white {
   color: #000000;
@@ -167,10 +172,11 @@ img {
   flex-direction: row;
 }
 .proyects .content .proyectsbox {
-  padding: 40px 20px 10px 20px;
+  padding: 50px 20px 20px 20px;
   background: #222;
   color: #fff;
-  max-width: 340px;
+  width: 340px;
+  height: 340px;
   margin: 20px;
   text-align: center;
   transition: 0.5s ease;
@@ -195,6 +201,22 @@ img {
 }
 .proyects .content .proyectsbox p {
   font-size: 15px;
+}
+
+.proyect-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.email {
+  text-decoration:underline;
+  color: #fff;
+}
+
+.contentbox li {
+  margin-left: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* work section design

@@ -10,10 +10,10 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-      <header>
-<a href="#" class="logo">Portfolio</a>
+  <header>
+    <a href="#" class="logo">Portfolio</a>
 
-<!-- MENU DINAMICO CON LINKS
+    <!-- MENU DINAMICO CON LINKS
 
 <div class="toggle" onclick="toggleMenu();"></div>
 <ul class="menu">
@@ -26,20 +26,24 @@
 </ul>
 -->
 
-</header>
+  </header>
 
   <!-- BANNER -->
+  <section class="banner" id="home">
     <div class="text-banner">
       <h2><span>Alba Marqués</span></h2>
       <h3><br>Ingeniera Robótica</h3>
       <!-- <a href="#home" class="btn">About Me</a> -->
     </div>
-  <section class="banner" id="home">
-
-    <div class="img-banner">
+    <!-- <div class="img-banner">
       <img src="images/mano-robotica.png" alt="Banner Image">
-    </div>
+    </div> -->
   </section>
+
+  <!-- IMAGEN -->
+  <div class="w50">
+    <img src="https://raw.githubusercontent.com/AMarqs/AMarqs/refs/heads/main/images/mano-robotica.png" class="img">
+  </div>
 
   <!-- SOBRE MI -->
   <section class="about" id="about">
@@ -48,7 +52,7 @@
     </div>
     <div class="content">
       <div class="contentbox">
-        <p>Soy graduada en Ingeniería Electrónica, Robótica y Mecatrónica. 
+        <p>Soy graduada en Ingeniería Electrónica, Robótica y Mecatrónica.
           <br>Desde noviembre de 2023, también soy de estudiante en la escuela 42Málaga de la Fundación Telefónica.
           <br>
           <br>Actualmente estoy desarrollándome en los ámbitos de robótica y automatización:
@@ -56,19 +60,13 @@
         <br>
         <p>
         <ul>
-          <li>Estudiando C/C++ y otros lenguajes de  programación en 42Málaga.</li>
+          <li>Estudiando C/C++ y otros lenguajes de programación en 42Málaga.</li>
           <li>Desarrollando mini proyectos de robótica móvil con ROS.</li>
           <li>Realizando cursos para profundizar en el aprendizaje de Machine Learning e IA.</li>
           <li>Obteniendo certificaciones que demuestren y validen mis conocimientos.</li>
         </ul>
         </p>
       </div>
-
-      <!-- IMAGEN
-      <div class="w50">
-        <img src="https://github.com/JackCree/CSSexercices/blob/main/Responsive-web-design-landing-page-01/foots.jpg?raw=true" class="img"> 
-      </div>
-       -->
 
     </div>
   </section>
@@ -80,22 +78,28 @@
     </div>
     <div class="content">
       <div class="proyectsbox">
-        <div class="icon"><i class="fas fa-laptop-code"></i></div>
-        <h2>42 Málaga</h2>
-        <p>Proyectos de 42  F.Telefónica</p>
-      </div> 
+        <a href="https://github.com/AMarqs/42school" class="proyect-link">
+          <div class="icon"><i class="fas fa-laptop-code"></i></div>
+          <h2>42 Málaga</h2>
+          <p>Proyectos de 42 F.Telefónica</p>
+        </a>
+      </div>
       <div class="proyectsbox">
-        <div class="icon"><i class="fas fa-file-code"></i></div>
-        <h2>Robótica</h2>
-        <!-- <p>Lorem ipsum dolor sit amet...</p> -->
-      </div> 
+        <a href="https://github.com/AMarqs/robotics" class="proyect-link">
+          <div class="icon"><i class="fas fa-laptop-code"></i></div>
+          <h2>Robótica</h2>
+          <p>Proyectos de Robótica</p>
+        </a>
+      </div>
       <div class="proyectsbox">
-        <div class="icon"><i class="fas fa-database"></i></div>
-        <h2>ML / AI</h2>
-        <!-- <p>Lorem ipsum dolor sit amet...</p> -->
+        <a href="https://github.com/AMarqs/robotics" class="proyect-link">
+          <div class="icon"><i class="fas fa-laptop-code"></i></div>
+          <h2>ML / AI</h2>
+          <p>Cursos de IA y Machine Learning</p>
+        </a>
       </div>
     </div>
-  </div>
+    </div>
   </section>
 
   <!-- SECCION DE TRABAJOS (con fotos de proyectos) 
@@ -118,7 +122,7 @@
   </section>
   -->
 
-<!-- TESTIMONIOS
+  <!-- TESTIMONIOS
 <section class="testimonials" id="testimonial">
   <div class="heading">
       <h2>Testimonials</h2>
@@ -137,13 +141,13 @@
 </section>
 -->
 
-<!-- INFORMACION DE CONTACTO -->
-<section class="contact" id="contact">
-  <div class="heading white">
+  <!-- INFORMACION DE CONTACTO -->
+  <section class="contact" id="contact">
+    <div class="heading white">
       <h2>INFORMACIÓN DE CONTACTO</h2>
       <!-- <p>Some questions about work. Here you are.</p> -->
 
-  </div>
+    </div>
     <div class="content">
       <div class="contactinfo">
         <!-- <h3>Contact Informations</h3> -->
@@ -152,21 +156,27 @@
             <div class="icon"><i class="fas fa-envelope"></i></div>
             <div class="text">
               <h3>Correo electrónico</h3>
-              <p>albamarquesr@gmail.com</p>
+              <a href="mailto:albamarquesr@gmail.com" class="email">
+                <p>albamarquesr@gmail.com</p>
+              </a>
             </div>
           </div>
           <div class="box">
             <div class="icon"><i class="fas fa-envelope"></i></div>
             <div class="text">
               <h3>LinkedIn</h3>
-              <p>Alba Marqués</p>
+              <a href="https://www.linkedin.com/in/alba-marqués-reca" class="email">
+                <p>Alba Marqués</p>
+              </a>
             </div>
           </div>
           <div class="box">
             <div class="icon"><i class="fas fa-envelope"></i></div>
             <div class="text">
-              <h3>GitHub</h3>              
-              <p>AMarqs</p>
+              <h3>GitHub</h3>
+              <a href="https://github.com/AMarqs" class="email">
+                <p>AMarqs</p>
+              </a>  
             </div>
           </div>
         </div>
@@ -185,24 +195,24 @@
 
     </div>
     </div>
-</section>
+  </section>
 
-<!-- COPYRIGHT 
+  <!-- COPYRIGHT 
 <div class="copyright">
   Copyright 2020 © Online Tutorials. All Rights Reserved
 </div>
 -->
 
-  <script type="text/javascript">  window.addEventListener('scroll', function(){
-  var header= document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 0);    
+  <script type="text/javascript">  window.addEventListener('scroll', function () {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
     });
-    
-    function toggleMenu(){
+
+    function toggleMenu() {
       var menutoggle = document.querySelector('.toggle');
       var menu = document.querySelector('.menu');
       menutoggle.classList.toggle('active');
-      menu.classList.toggle('active') 
+      menu.classList.toggle('active')
     }
   </script>
 </body>
