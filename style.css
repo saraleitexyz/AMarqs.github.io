@@ -159,6 +159,26 @@ img {
   margin: 20px;
   text-align: center;
   transition: 0.5s ease;
+  align-items: center;
+  justify-content: space-between;
+}
+.project .projectbox .black {
+  margin-top: 90px;
+  background-color: #00000086;
+  border: #dbb192 1px solid;
+  text-align: center;
+}
+.project .projectbox .gray {
+  margin-top: 90px;
+  background-color: #44444486;
+  border: #dbb192 1px solid;
+  text-align: center;
+}
+.project .projectbox .blue {
+  margin-top: 90px;
+  background-color: #0f66b786;
+  border: #dbb192 1px solid;
+  text-align: center;
 }
 .project .projectbox h2 {
   font-size: 20px;
