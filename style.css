@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fefae0;
+}
+
+/* Nav: */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #d4a373;
+}
+
+/* Main section: */
+#main {
+  background: url(images/header-image.png) no-repeat center;
+  height: 100vh;
+  background-size: cover;
+}
+
+#main img {
+  background-color: D4A373;
+}
+
+/* About me: */
+
+#about {
+  display: flex;
+  background-color: #ccd5ae;
+}
+
+/* Project section: */
+#projects {
+  text-align: center;
+}
+
+#projects > div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects > div:last-child > div {
+  flex: 1;
+}
+
+#malaga42 {
+  background-image: url(images/42-image.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+#robotica {
+  background-image: url(images/robotica-image.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+#ml-ai {
+  background-image: url(images/ml-ai-image.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Contact: */
+#contact {
+  padding: 50px;
+  background-color: #ccd5ae;
+}
+
+/* Footer: */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #d4a373;
+  font-weight: 800;
+}
