@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Monserrat", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  background-color: #fefae0;
+  background: linear-gradient(
+      rgba(212, 163, 115, 0.55),
+      rgba(212, 163, 115, 0.55)
+    ),
+    url(images/header-image.png) no-repeat top center;
+  background-size: contain;
 }
 
 /* Nav: */
@@ -19,12 +20,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 40px 50px;
+  clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+  background-color: #fefae0;
 }
 
 header h1 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 nav ul {
@@ -46,13 +49,16 @@ nav a:hover {
 
 /* Main section: */
 #main {
-  background: url(images/header-image.png) no-repeat center;
-  height: 100vh;
+  height: 105vh;
   background-size: cover;
-}
-
-#main img {
-  background-color: D4A373;
+  text-align: center;
+  color: #fefae0;
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* About me: */
@@ -106,7 +112,8 @@ nav a:hover {
 /* Footer: */
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 50px;
   background-color: #d4a373;
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
