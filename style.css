@@ -152,8 +152,16 @@ nav a:hover {
 }
 
 /* Contact: */
-#contact {
+#banner2 {
+  text-align: center;
   padding: 50px;
+  background-color: #fefae0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+}
+
+#contact {
   background-color: #ccd5ae;
 }
 
