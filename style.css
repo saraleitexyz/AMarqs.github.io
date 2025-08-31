@@ -68,6 +68,45 @@ nav a:hover {
   background-color: #ccd5ae;
 }
 
+#logo {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding-bottom: 20px;
+}
+
+#logo img {
+  height: 2.5rem;
+}
+
+#about-desc {
+  padding: 5.5rem;
+  font-size: 1.2rem;
+}
+
+#about h4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+#about p {
+  font-weight: 500;
+  padding: 10px 0px;
+}
+
+#about button {
+  background-color: #fefae0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 15px 30px;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 50px;
+}
+
 /* Project section: */
 #projects {
   text-align: center;
