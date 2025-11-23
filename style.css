@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -74,7 +77,7 @@ nav a:hover {
   align-items: center;
   justify-content: flex-end;
   gap: 0.5rem;
-  padding-bottom: 20px 0px;
+  padding-bottom: 20px;
 }
 
 #logo img {
@@ -190,6 +193,16 @@ nav a:hover {
   z-index: 1;
 }
 
+@media (max-width: 900px) {
+  #project-cards {
+    flex-direction: column;
+  }
+
+  #project-cards > div > a {
+    height: 300px;
+  }
+}
+
 /* Contact: */
 #banner2 {
   text-align: center;
@@ -198,10 +211,73 @@ nav a:hover {
   font-weight: 700;
   font-size: 1.3rem;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  margin-bottom: 40px;
 }
 
 #contact {
-  background-color: #ccd5ae;
+  background: #ccd5ae;
+}
+
+.contact-wrapper {
+  display: flex;
+  padding: 50px 50px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-text h3 {
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.contact-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.contact-text li {
+  margin-bottom: 10px;
+}
+
+.contact-text a {
+  color: #003366;
+  text-decoration: underline;
+}
+
+.social-icons img {
+  width: 45px;
+  margin-left: 5px;
+}
+
+.contact-image img {
+  width: 260px;
+  border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact-wrapper {
+    text-align: center;
+  }
+
+  .contact-image {
+    margin-top: 20px;
+  }
 }
 
 /* Footer: */
